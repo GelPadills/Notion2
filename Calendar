@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<!-- original:https://codepen.io/boudra/pen/raErwP -->
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
 
-    <style>
-       body {
+<style>
+    body {
     font-family: 'Courier', monospace;
-    background-color: #3b323f;
-  height: 100vh;
+    background-color: #fff;
 }
 
 .wrapper {
@@ -30,7 +26,7 @@ button::-moz-focus-inner {
     margin: 20px 0;
     position: relative;
     overflow: hidden;
-    height: 310px;
+    height: 345px;
     width: 350px;
     font-size: 14px;
     box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
@@ -166,11 +162,11 @@ footer a:link {
   color: #fff;
   text-decoration: none;
 }
-    </style>
+</style>
 </head>
-<body>
+<body data-new-gr-c-s-check-loaded="14.1000.0" data-gr-ext-installed="" cz-shortcut-listen="true">
     <div class="">
-        <div id="calendari"></div>
+        <div id="calendari"><table class="actiu" data-actual="2021/02/19"><tr><th colspan="7"><button class="boto-prev">◂</button><span>March<span class="any">2021</span></span><button class="boto-next">▸</button></th></tr><tr><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th><th>Su</th></tr><tr><td class="fora"><span>22</span></td><td class="fora"><span>23</span></td><td class="fora"><span>24</span></td><td class="fora"><span>25</span></td><td class="fora"><span>26</span></td><td class="fora"><span>27</span></td><td class="fora"><span>28</span></td></tr><tr><td><span>1</span></td><td><span>2</span></td><td><span>3</span></td><td><span>4</span></td><td><span>5</span></td><td><span>6</span></td><td><span>7</span></td></tr><tr><td><span>8</span></td><td><span>9</span></td><td><span>10</span></td><td><span>11</span></td><td><span>12</span></td><td><span>13</span></td><td><span>14</span></td></tr><tr><td><span>15</span></td><td><span>16</span></td><td><span>17</span></td><td><span>18</span></td><td class="avui"><span>19</span></td><td><span>20</span></td><td><span>21</span></td></tr><tr><td><span>22</span></td><td><span>23</span></td><td><span>24</span></td><td><span>25</span></td><td><span>26</span></td><td><span>27</span></td><td><span>28</span></td></tr><tr><td><span>29</span></td><td><span>30</span></td><td><span>31</span></td><td class="fora"><span>1</span></td><td class="fora"><span>2</span></td><td class="fora"><span>3</span></td><td class="fora"><span>4</span></td></tr></table></div>
       </div>
       <script>
         var mesos = [
@@ -185,7 +181,7 @@ footer a:link {
     'September',
     'October',
     'November',
-    'Decmber'
+    'Desember'
 ];
 
 var dies = [
@@ -199,13 +195,13 @@ var dies = [
 ];
 
 var dies_abr = [
-    'SUN
-    'MON
-    'TUE
-    'WED
-    'THU
-    'FRI
-    'SAT
+    'SUN',
+    'MON',
+    'TUE',
+    'WED',
+    'THU',
+    'FRI',
+    'SAT'
 ];
 
 Number.prototype.pad = function(num) {
@@ -345,5 +341,6 @@ function calendari(widget, data)
 calendari(document.getElementById('calendari'), new Date());
 
     </script>
-</body>
-</html>
+
+
+</body></html>
